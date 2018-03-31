@@ -1,0 +1,47 @@
+################################################################
+# Russian presidential elections (March 18, 2018) data
+# Collected by Central Electoral Commission of Russian Federation
+# Retrieved from the CEK RF website and reduced to a TDT file 
+# by Alexei Kouprianov : alexei.kouprianov@gmail.com
+################################################################
+
+The dataset contains data from the presidential elections
+(March 18, 2018): 2052 polling 
+stations united in 30 districts. 
+
+################################################################
+# Explanation of variables
+################################################################
+
+UIK.RAW : Polling station
+UIK : Polling station number;
+VOTERS : (orig. "Число избирателей, внесенных в список") Number of registered voters;
+BALL.RECEIVED : (orig. "Число бюллетеней, полученных УИК") Number of blank ballots received by a Polling station;
+BALL.ISS.PRELIMINARY : 
+BALL.ISS.UIK.DAYOFVOTE : (orig. "Число бюллетеней, выданных в помещении для голосования") Number of blank ballots issued inside the Polling station;
+BALL.ISS.EXTRA : (orig. "Число бюллетеней, выданных вне помещения для голосования") Number of blank ballots issued outside the Polling station (usually for disabled voting at home by appointment);
+BALL.CANCELLED : (orig. "Число погашенных бюллетеней") Number of unused blank ballots which had been cancelled before the counting procedure began;
+BALL.PORTABLE_BOXES : (orig. "Число бюллетеней, содержащихся в переносных ящиках") Number of ballots cast in the portable ballot boxes;
+BALL.STATIONARY_BOXES : (orig. "Число бюллетеней, содержащихся в стационарных ящиках") Number of ballots cast in the stationary ballot boxes;
+BALL.INVALID : (orig. "Число недействительных бюллетеней") Number of invalid ballots;
+BALL.VALID : (orig. "Число действительных бюллетеней") Number of valid ballots;
+BALL.LOST : (orig. "Число утраченных бюллетеней") Number of lost ballots;
+BALL.NOT_RECORDED: (orig. "Число бюллетеней, не учтенных при получении") Number of ballots which had been received by a Polling station but not registered properly after that;
+TIK : Territorial Electoral Commission number;
+BABURIN : (orig. "Бабурин, Сергей Николаевич") Number of ballots cast for Sergei Baburin;
+BABURIN.pct : Share of ballots cast for Sergei Baburin as calculated by the Electoral Commission;
+GRUDININ : (orig. "Грудинин, Павел Николаевич") Number of ballots cast for Pavel Grudinin;
+GRUDININ.pct : Share of ballots cast for Pavel Grudinin as calculated by the Electoral Commission;
+ZHIRINOVSKI : (orig. "Жириновский, Владимир Вольфович") Number of ballots cast for Vladimir Zhirinovskii;
+ZHIRINOVSKI.pct : Share of ballots cast for Vladimir Zhirinovskii as calculated by the Electoral Commission;
+PUTIN : (orig. "Путин, Владимир Владимирович") Number of ballots cast for Vladimir Putin;
+PUTIN.pct : Share of ballots cast for Vladimir Putin as calculated by the Electoral Commission;
+SOBCHAK : (orig. "Собчак, Ксения Анатольевна") Number of ballots cast for Xenia Sobchak;
+SOBCHAK.pct : Share of ballots cast for Xenia Sobchak as calculated by the Electoral Commission;
+SURAIKIN : (orig. "Сурайкин, Максим Александрович") Number of ballots cast for Maxim Suraikin;
+SURAIKIN.pct : Share of ballots cast for Maxim Suraikin as calculated by the Electoral Commission;
+TITOV : (orig. "Титов, Борис Юрьевич") Number of ballots cast for Boris Titov;
+TITOV.pct : Share of ballots cast for Boris Titov as calculated by the Electoral Commission;
+YAVLINSKI : (orig. "Явлинский, Григорий Алексеевич") Number of ballots cast for Grigorii Yavlinskii;
+YAVLINSKI.pct : Share of ballots cast for Grigorii Yavlinskii as calculated by the Electoral Commission;
+
