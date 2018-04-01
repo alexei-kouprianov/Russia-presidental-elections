@@ -17,7 +17,7 @@
 # remarks on the early versions of the script. 
 # I am grateful to Boris Ovchinnikov for a stimulating discussion.
 #
-# Alexei Kouprianov
+# Alexei Kouprianov, alexei.kouprianov@gmail.com
 #
 ###############################################################################
 
