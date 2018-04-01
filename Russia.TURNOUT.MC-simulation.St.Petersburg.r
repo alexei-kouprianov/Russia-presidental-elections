@@ -11,7 +11,8 @@
 # The following script is based on the methods described in 
 # Dmitry Kobak, Sergey Shpilkin, and Maxim S. Pshenichnikov "Integer 
 # percentages as electoral falsification fingerprints". The Annals of Applied 
-# Statistics. Volume 10, Number 1 (2016), 54-73.
+# Statistics. Volume 10, Number 1 (2016), 54-73. 
+# [https://arxiv.org/abs/1410.6059]
 # 
 # I am indebted to Sergey Shpilkin for his kind explanations and critical 
 # remarks on the early versions of the script. 
@@ -35,6 +36,9 @@ spb.2018$TURNOUT <- spb.2018$VOTED/spb.2018$VOTERS
 
 # MK.repeats <- 100 # For preliminary testing;
 # MK.repeats <- 1000 # For preliminary testing;
+# DO NOT try the following line on larger datasets. 10,000 iterations on 
+# the dataset for the whole Russia (97+K records) and for 0.1% bins 
+# may take days to complete.
 MK.repeats <- 10000 # Working repeats number;
 
 spb.ksp.rbinom.ls <- NULL # ls of simulated polling stations;
@@ -118,7 +122,7 @@ colnames(spb.hist.ksp.simulated.stats.1pct) <- c("PCT","MEAN","SD","MEDIAN","Q1"
 
 png("hist.TURNOUT.spb.MEDIAN-IQR.simul.png", height=750, width=750)
 par(cex=1.5, lwd=1.5)
-hist(spb.2018.s.dyn$TURNOUT, breaks=seq(-.005, 1.005, .01), 
+hist(spb.2018$TURNOUT, breaks=seq(-.005, 1.005, .01), 
 ylim=c(0,190), col=rgb(0,0,1,.3), border=rgb(0,0,1,.3),
 main="Presidential elections in Russia, 2018-03-18\nSt. Petersburg",
 xlab="Voters' turnout, 1% bin",
@@ -134,7 +138,7 @@ dev.off()
 
 png("hist.TURNOUT.spb.MEAN-SD.simul.png", height=750, width=750)
 par(cex=1.5, lwd=1.5)
-hist(spb.2018.s.dyn$TURNOUT, breaks=seq(-.005, 1.005, .01), 
+hist(spb.2018$TURNOUT, breaks=seq(-.005, 1.005, .01), 
 ylim=c(0,190), col=rgb(0,0,1,.3), border=rgb(0,0,1,.3),
 main="Presidential elections in Russia, 2018-03-18\nSt. Petersburg",
 xlab="Voters' turnout, 1% bin",
