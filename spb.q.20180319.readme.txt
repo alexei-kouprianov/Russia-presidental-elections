@@ -1,32 +1,31 @@
-################################################################
-# Russian presidential elections (March 18, 2018) data
+###############################################################################
+# Russian presidential elections (March 18, 2018) data for St. Petersburg
 # Collected by Central Electoral Commission of Russian Federation
-# Retrieved from the CEK RF website and reduced to a TDT file 
+# Retrieved from the CEK RF website and reduced to a tab-delimited text file 
 # by Alexei Kouprianov : alexei.kouprianov@gmail.com
-################################################################
+###############################################################################
 
-The dataset contains data from the presidential elections
-(March 18, 2018): 2052 polling 
-stations united in 30 districts. 
+The dataset contains data from the presidential elections (March 18, 2018): 
+2052 polling stations united in 30 districts.
 
-################################################################
+###############################################################################
 # Explanation of variables
-################################################################
+###############################################################################
 
 UIK.RAW : Polling station
 UIK : Polling station number;
-VOTERS : (orig. "Число избирателей, внесенных в список") Number of registered voters;
-BALL.RECEIVED : (orig. "Число бюллетеней, полученных УИК") Number of blank ballots received by a Polling station;
-BALL.ISS.PRELIMINARY : 
-BALL.ISS.UIK.DAYOFVOTE : (orig. "Число бюллетеней, выданных в помещении для голосования") Number of blank ballots issued inside the Polling station;
-BALL.ISS.EXTRA : (orig. "Число бюллетеней, выданных вне помещения для голосования") Number of blank ballots issued outside the Polling station (usually for disabled voting at home by appointment);
-BALL.CANCELLED : (orig. "Число погашенных бюллетеней") Number of unused blank ballots which had been cancelled before the counting procedure began;
-BALL.PORTABLE_BOXES : (orig. "Число бюллетеней, содержащихся в переносных ящиках") Number of ballots cast in the portable ballot boxes;
-BALL.STATIONARY_BOXES : (orig. "Число бюллетеней, содержащихся в стационарных ящиках") Number of ballots cast in the stationary ballot boxes;
-BALL.INVALID : (orig. "Число недействительных бюллетеней") Number of invalid ballots;
-BALL.VALID : (orig. "Число действительных бюллетеней") Number of valid ballots;
-BALL.LOST : (orig. "Число утраченных бюллетеней") Number of lost ballots;
-BALL.NOT_RECORDED: (orig. "Число бюллетеней, не учтенных при получении") Number of ballots which had been received by a Polling station but not registered properly after that;
+VOTERS : (orig. "Число избирателей, включенных в список избирателей") Number of registered voters;
+BALL.RECEIVED : (orig. "Число избирательных бюллетеней, полученных участковой избирательной комиссией") Number of blank ballots received by a Polling station;
+BALL.ISS.PRELIMINARY : (orig. "Число избирательных бюллетеней, выданных избирателям, проголосовавшим досрочно") Number of ballots used for early vote (equals to zero);
+BALL.ISS.UIK.DAYOFVOTE : (orig. "Число избирательных бюллетеней, выданных в помещении для голосования в день голосования") Number of blank ballots issued inside the Polling station;
+BALL.ISS.EXTRA : (orig. "Число избирательных бюллетеней, выданных вне помещения для голосования в день голосования") Number of blank ballots issued outside the Polling station (usually for disabled voting at home by appointment);
+BALL.CANCELLED : (orig. "Число погашенных избирательных бюллетеней") Number of unused blank ballots which had been cancelled before the counting procedure began;
+BALL.PORTABLE_BOXES : (orig. "Число избирательных бюллетеней в переносных ящиках для голосования") Number of ballots cast in the portable ballot boxes;
+BALL.STATIONARY_BOXES : (orig. "Число бюллетеней в стационарных ящиках для голосования") Number of ballots cast in the stationary ballot boxes;
+BALL.INVALID : (orig. "Число недействительных избирательных бюллетеней") Number of invalid ballots;
+BALL.VALID : (orig. "Число действительных избирательных бюллетеней") Number of valid ballots;
+BALL.LOST : (orig. "Число утраченных избирательных бюллетеней") Number of lost ballots;
+BALL.NOT_RECORDED: (orig. "Число избирательных бюллетеней, не учтенных при получении") Number of ballots which had been received by a Polling station but not registered properly after that;
 TIK : Territorial Electoral Commission number;
 BABURIN : (orig. "Бабурин, Сергей Николаевич") Number of ballots cast for Sergei Baburin;
 BABURIN.pct : Share of ballots cast for Sergei Baburin as calculated by the Electoral Commission;
@@ -44,4 +43,3 @@ TITOV : (orig. "Титов, Борис Юрьевич") Number of ballots cast f
 TITOV.pct : Share of ballots cast for Boris Titov as calculated by the Electoral Commission;
 YAVLINSKI : (orig. "Явлинский, Григорий Алексеевич") Number of ballots cast for Grigorii Yavlinskii;
 YAVLINSKI.pct : Share of ballots cast for Grigorii Yavlinskii as calculated by the Electoral Commission;
-
